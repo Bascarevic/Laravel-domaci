@@ -14,6 +14,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        $aseeder = new AutorSeeder();
+        $dseeder = new DrzavaSeeder();
+        $kseeder = new KnjigaSeeder();
+
+        $aseeder->run();
+        $dseeder->run();
+        $kseeder->run();
     }
 }
