@@ -18,7 +18,7 @@ class KnjigaFactory extends Factory
     public function definition()
     {
         return [
-            'naslov' => $this->faker->word,
+            'naslov' => $this->faker->sentence(3),
             'zanr'=>$this->faker->randomElement($array=array('drama', 'fikcija', 'ljubavni', 'triler', 'biografija')),
             'godina_izdanja' => $this->faker->numberBetween($min = 1980, $max = 2010),
             'izdavac'=>$this->faker->randomElement($array=array('Vulkan', 'Laguna')),
