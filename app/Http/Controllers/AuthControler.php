@@ -67,7 +67,7 @@ class AuthControler extends Controller
 
     public function logout()
     {
-        auth()->user()->tokens()->delete();
+      auth()->user()->tokens()->delete();
       // return response()->json('You are logged out! Goodbye!')
       return ['message'=>'You are logged out! Goodbye!'];
     }

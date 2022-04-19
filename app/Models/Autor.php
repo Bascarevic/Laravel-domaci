@@ -12,6 +12,7 @@ class Autor extends Model
     protected $fillable=[
         'ime',
         'prezime',
+        'godina_rodjenja',
         'drzava_id'
     ];
 

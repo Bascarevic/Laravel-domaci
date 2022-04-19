@@ -13,10 +13,11 @@ class Knjiga extends Model
         'naslov',
         'zanr',
         'godina_izdanja',
-        'autor_id'
+        'autor_id',
+        'izdavac'
     ];
 
-    public function vlasnik()
+    public function autor()
     {
         return $this->belongsTo(Autor::class);
     }
